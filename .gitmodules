@@ -2,3 +2,21 @@
 	path = OpenSceneGraph
 	url = https://github.com/openscenegraph/OpenSceneGraph.git
 	branch = master
+[submodule "crunch"]
+	path = crunch
+	url = https://github.com/BinomialLLC/crunch.git
+	branch = master
+[submodule "libzmq"]
+	path = libzmq
+	url = https://github.com/zeromq/libzmq.git
+	branch = master
+[submodule "glog"]
+	path = glog
+	url = https://github.com/google/glog.git
+	branch = master
+[submodule "json"]
+	path = json
+	url = https://github.com/nlohmann/json.git
+[submodule "gflags"]
+	path = gflags
+	url = https://github.com/gflags/gflags.git
