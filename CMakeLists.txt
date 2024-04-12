@@ -7,10 +7,11 @@ project(cesium-native
 
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR})
 
-#set(dt_glog_include_dir glog/)
 add_subdirectory(json)
 add_subdirectory(gflags)
 add_subdirectory(glog)
+add_subdirectory(mongo-c-driver)
+add_subdirectory(dt-ifcpp)
 #add_subdirectory(libzmq)
 #add_subdirectory(OpenSceneGraph)
 
