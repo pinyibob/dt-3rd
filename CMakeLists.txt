@@ -11,8 +11,8 @@ set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR})
 add_subdirectory(json)
 add_subdirectory(gflags)
 add_subdirectory(glog)
-add_subdirectory(libzmq)
-add_subdirectory(OpenSceneGraph)
+#add_subdirectory(libzmq)
+#add_subdirectory(OpenSceneGraph)
 
 add_library(crnlib
   crunch/crnlib/crn_arealist.cpp

@@ -20,3 +20,6 @@
 [submodule "gflags"]
 	path = gflags
 	url = https://github.com/gflags/gflags.git
+[submodule "stb"]
+	path = stb
+	url = https://github.com/nothings/stb.git
