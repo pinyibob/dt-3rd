@@ -29,3 +29,15 @@
 [submodule "dt-ifcpp"]
 	path = dt-ifcpp
 	url = git@github.com:pinyibob/dt-ifcpp.git
+[submodule "gdal"]
+	path = gdal
+	url = https://github.com/OSGeo/gdal.git
+[submodule "vcglib"]
+	path = vcglib
+	url = https://github.com/cnr-isti-vclab/vcglib.git
+[submodule "draco"]
+	path = draco
+	url = https://github.com/google/draco.git
+[submodule "freeimage"]
+	path = freeimage
+	url = https://github.com/WinMerge/freeimage.git
