@@ -1,6 +1,13 @@
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} PARENT_SCOPE)
 
-#set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR})
+add_subdirectory(json)
+add_subdirectory(gflags)
+add_subdirectory(glog)
+add_subdirectory(mongo-c-driver)
+add_subdirectory(dt-ifcpp)
+add_subdirectory(gdal)
+add_subdirectory(vcglib)
+
 if ((NOT TARGET draco) AND (NOT TARGET draco_static))
     add_subdirectory(draco)
     if (MSVC)
@@ -12,18 +19,12 @@ endif()
 
 set(CESIUM_NATIVE_DRACO_LIBRARY ${CESIUM_NATIVE_DRACO_LIBRARY} PARENT_SCOPE)
 
-add_subdirectory(json)
-add_subdirectory(gflags)
-add_subdirectory(glog)
-#add_subdirectory(mongo-c-driver)
-add_subdirectory(dt-ifcpp)
-add_subdirectory(gdal)
-add_subdirectory(vcglib)
 #add_subdirectory(OpenSceneGraph)
+
+#install(TARGETS gflags)
 
 #install(TARGETS libbson)
 #install(TARGETS libmongoc)
-
 
 #add_subdirectory(libzmq)
 #add_subdirectory(OpenSceneGraph)
@@ -224,6 +225,3 @@ install(TARGETS crnlib
   LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
   PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/crnlib
 )
-
-
-set(dt_3rd_glog_include_dir ${CMAKE_CURRENT_LIST_DIR}/)
